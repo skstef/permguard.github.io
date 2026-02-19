@@ -42,12 +42,16 @@ export const NAVIGATION: INavigation = [
     name: "Trust Plane",
     href: "/trust-plane",
   },
+  {
+    name: "Learn",
+    href: "/learn",
+  },
 ];
 
 export const Navigation = () => {
   return (
     <nav role="navigation">
-      <ul className="gap-4 lg:gap-7 xl:gap-12 hidden min-[980px]:flex">
+      <ul className="gap-3 lg:gap-3 xl:gap-8 hidden min-[980px]:flex">
         {NAVIGATION.map((el) => (
           <NavLink key={el.name} {...el} />
         ))}

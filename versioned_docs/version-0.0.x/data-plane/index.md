@@ -2,10 +2,8 @@
 id: data-plane
 title: Data Plane
 sidebar_label: Data Plane
-sidebar_position: 1
+sidebar_position: 4
 description: Data Plane
 ---
 
-## Data Plane 0.0.x
-
-Data Plane.
+The Data Plane handles authorization decisions at runtime. It acts as the Policy Decision Point (PDP), evaluating each request against the configured policies and permissions to determine whether an operation is allowed or denied.

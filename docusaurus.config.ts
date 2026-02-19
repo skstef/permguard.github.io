@@ -67,12 +67,17 @@ const config: Config = {
           position: "left",
           label: "Data Plane",
         },
-
         {
           type: "doc",
           docId: "trust-plane/trust-plane",
           position: "left",
           label: "Trust Plane",
+        },
+                {
+          type: "doc",
+          docId: "learn/learn",
+          position: "left",
+          label: "Learn",
         },
         {
           type: "search",
