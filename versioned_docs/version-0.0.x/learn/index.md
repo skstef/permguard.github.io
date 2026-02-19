@@ -6,14 +6,6 @@ sidebar_position: 6
 description: Learn
 ---
 
----
-id: developers-hands-on-base-example
-title: Hands-on Base Example
-sidebar_label: Hands-on Base Example
-sidebar_position: 1004
-description: This section provides a hands-on example of using Permguard.
----
-
 ## PharmaAuthZFlow Example
 
 The **PharmaAuthZFlow** example demonstrates how `Permguard` enforces authorization across the distinct trust boundaries of a pharmacy ecosystem.
