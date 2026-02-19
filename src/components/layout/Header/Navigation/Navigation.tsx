@@ -28,7 +28,7 @@ export const NAVIGATION: INavigation = [
   },
   {
     name: "Command-Line",
-    href: "/cli",
+    href: "/command-line",
   },
   {
     name: "Control Plane",
