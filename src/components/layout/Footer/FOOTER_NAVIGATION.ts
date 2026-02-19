@@ -34,7 +34,7 @@ export const FOOTER_NAVIGATION = [
     links: [
       {
         title: "Concepts",
-        href: "/developoment/concepts",
+        href: "/developers/concepts/concepts-authn-authz",
       },
       {
         title: "SDKs",
@@ -51,7 +51,7 @@ export const FOOTER_NAVIGATION = [
       },
       {
         title: "License",
-        href: "/docs/getting-started/features-licensing/",
+        href: "/developers/legal-licenses/legal-licenses-third-party-technologies",
       },
       {
         title: "Blog",
