@@ -45,7 +45,7 @@ const config: Config = {
       items: [
         {
           type: "doc",
-          docId: "developers/developers-intro-to-permguard",
+          docId: "developers/developers",
           position: "left",
           label: "Developers",
         },
@@ -73,7 +73,7 @@ const config: Config = {
           position: "left",
           label: "Trust Plane",
         },
-                {
+        {
           type: "doc",
           docId: "learn/learn",
           position: "left",
