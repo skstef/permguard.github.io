@@ -1,0 +1,266 @@
+@import "./fonts/inter.css";
+
+html,
+* {
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@import "tailwindcss/theme.css" layer(theme);
+
+@layer base {
+  #tw-scope {
+    @import "tailwindcss/preflight.css" layer(base);
+  }
+}
+
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+@import "./forced-dark.css";
+
+* {
+  font-family: Inter, sans-serif;
+  letter-spacing: -0.27px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#__docusaurus {
+  background-color: #17181c !important;
+  color: #c1c3c8;
+  background-image: url("../../static/images/app_bg.png");
+  background-position-x: center;
+  background-repeat: repeat;
+  margin: 0 auto !important;
+  position: relative !important;
+  width: 100%;
+}
+
+.wrapper {
+  contain: layout;
+}
+
+.break-anywhere {
+  line-break: anywhere;
+}
+
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: #141416 #313239;
+
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img-comparison-slider {
+  --divider-color: linear-gradient(to bottom, #f05c80, #cc34df);
+  --divider-width: 8px;
+  width: 100%;
+}
+
+.DocSearch-Commands-Key {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+pre code.hljs {
+  overflow: visible !important;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 150%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  line-height: 1;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+#hubspot-messages-iframe-container {
+  z-index: 2147483600 !important;
+}
+
+:root {
+  --ifm-color-primary: #d53ec6;
+}
+
+.navbar__brand {
+  margin-right: auto;
+}
+
+.navbar__link:last-child {
+  margin-right: auto;
+}
+
+/* Version banner styling */
+.theme-doc-version-banner {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 0.45rem 1rem 0.45rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid rgba(214, 158, 46, 0.2);
+  border-left: 3px solid rgba(214, 158, 46, 0.6);
+  background: linear-gradient(
+    135deg,
+    rgba(214, 158, 46, 0.06) 0%,
+    rgba(214, 158, 46, 0.12) 100%
+  ) !important;
+  backdrop-filter: blur(8px);
+  color: #b8bac0 !important;
+  text-align: left;
+  margin: 0 0 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.theme-doc-version-banner::before {
+  content: "⚠";
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  color: #e2b548;
+}
+
+.theme-doc-version-banner > div {
+  display: inline;
+}
+
+.theme-doc-version-banner > div + div::before {
+  content: " ";
+}
+
+.theme-doc-version-banner a {
+  color: #e2b548 !important;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.theme-doc-version-banner a:hover {
+  color: #f5d26e !important;
+}
+
+.theme-doc-version-banner bold,
+.theme-doc-version-banner b,
+.theme-doc-version-banner strong {
+  color: #e2b548;
+  font-weight: 700;
+}
+
+/* Version badge styling */
+.theme-doc-version-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.55) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.theme-doc-version-badge:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Breadcrumbs styling */
+.breadcrumbs__item .breadcrumbs__link {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.15s ease;
+  letter-spacing: 0.01em;
+}
+
+.breadcrumbs__item .breadcrumbs__link:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: rgba(213, 62, 198, 0.08) !important;
+  border-color: rgba(213, 62, 198, 0.18) !important;
+  color: #d53ec6;
+  font-weight: 500;
+}
+
+.breadcrumbs__link--active {
+  background: rgba(213, 62, 198, 0.08) !important;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 0.65rem;
+  margin: 0 0.3rem;
+}
