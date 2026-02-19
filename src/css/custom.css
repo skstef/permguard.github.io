@@ -7,11 +7,10 @@ html,
   font-family: "Inter", sans-serif;
 }
 
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+/* Restore sidebar nested list indentation for Docusaurus */
+.menu__list .menu__list {
+  padding-left: 0.75rem;
 }
 
 button {
@@ -265,4 +264,8 @@ pre code.hljs {
   color: rgba(255, 255, 255, 0.15);
   font-size: 0.65rem;
   margin: 0 0.3rem;
+}
+
+.menu__list .menu__list {
+  padding-left: 0.75rem;
 }
