@@ -34,10 +34,6 @@
   color: #d946ef !important;
 }
 
-.navbar__link:last-child {
-  margin-right: 9%;
-}
-
 .navbar__inner {
   max-width: 1440px;
   margin: 0 auto;
@@ -63,8 +59,12 @@
   font-weight: 600;
 }
 
+.navbar__link:last-child {
+  margin-right: auto;
+}
+
 .theme-layout-navbar-left > .navbar__item {
-  --ifm-navbar-item-padding-horizontal: 30px;
+  --ifm-navbar-item-padding-horizontal: 22px;
   margin-top: -5px;
 }
 
@@ -93,7 +93,7 @@
 
 @media (max-width: 1280px) {
   .theme-layout-navbar-left > .navbar__item {
-    --ifm-navbar-item-padding-horizontal: 11px;
+    --ifm-navbar-item-padding-horizontal: 5px;
   }
 
   .navbar__link:last-child {

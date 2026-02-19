@@ -2,7 +2,7 @@
 id: developers-intro-to-permguard
 title: Intro to Permguard
 sidebar_label: Intro to Permguard
-sidebar_position: 10101
+sidebar_position: 1
 description: This section provides an introduction to Permguard.
 ---
 
@@ -79,10 +79,10 @@ The main goal of **Permguard** is to provide strong authorization with built-in 
 Authorization can be triggered by either:
 
 - **Network Layer**
-e.g., service mesh, sidecar proxy, gateway, or edge component.
+  e.g., service mesh, sidecar proxy, gateway, or edge component.
 
 - **Application Layer**
-via SDKs or native APIs.
+  via SDKs or native APIs.
 
 In both cases, the request is always evaluated **before** performing any action.
 
@@ -131,11 +131,11 @@ Permguard can run in:
 The architecture consists of two main components:
 
 - `Control Plane`
-Must be reachable at the network level to expose policy governance.
-It can also run on `edge` components or distributed infrastructure as long as it provides a consistent governance view.
+  Must be reachable at the network level to expose policy governance.
+  It can also run on `edge` components or distributed infrastructure as long as it provides a consistent governance view.
 
 - `Data Planes`
-Can be deployed anywhere — inside applications, gateways, edge devices, remote regions, or disconnected environments.
+  Can be deployed anywhere — inside applications, gateways, edge devices, remote regions, or disconnected environments.
 
 <div style={{textAlign: "center"}}>
   <img alt="Permguard" src="/images/diagrams/d13.webp"/>
