@@ -24,7 +24,7 @@ type INavigation = INavLink[];
 export const NAVIGATION: INavigation = [
   {
     name: "Developers",
-    href: "/developers",
+    href: "/developers/getting-started/developers-intro-to-permguard",
   },
   {
     name: "Command-Line",
@@ -51,7 +51,7 @@ export const NAVIGATION: INavigation = [
 export const Navigation = () => {
   return (
     <nav role="navigation">
-      <ul className="gap-3 lg:gap-3 xl:gap-8 hidden min-[980px]:flex">
+      <ul className="gap-1.25 lg:gap-3 xl:gap-8 hidden min-[980px]:flex">
         {NAVIGATION.map((el) => (
           <NavLink key={el.name} {...el} />
         ))}

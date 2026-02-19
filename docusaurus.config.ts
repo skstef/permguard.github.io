@@ -15,8 +15,8 @@ const config: Config = {
   themeConfig: {
     algolia: {
       appId: "6F99UF9PLR",
-      apiKey: "48b3cbd3b9eddd08519caf11932ffb22",
-      indexName: "docs_permguard_com_6f99uf9plr_articles",
+      apiKey: "744d695dd20b3801d01f8039e63f4c89",
+      indexName: "docs_permguard_com_index",
       contextualSearch: true,
     },
     metadata: [
@@ -73,7 +73,7 @@ const config: Config = {
           position: "left",
           label: "Trust Plane",
         },
-                {
+        {
           type: "doc",
           docId: "learn/learn",
           position: "left",
