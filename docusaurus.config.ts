@@ -88,7 +88,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/pic-protocol",
+          href: "https://github.com/permguard",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
