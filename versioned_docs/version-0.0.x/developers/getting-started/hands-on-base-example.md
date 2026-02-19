@@ -2,7 +2,7 @@
 id: learn
 title: Learn
 sidebar_label: Learn
-sidebar_position: 6
+sidebar_position: 4
 description: Learn
 ---
 
@@ -105,20 +105,20 @@ This use case covers the administrative workflow of creating and managing pharma
 
 - A **Platform Admin** creates a new branch.
 - The **Platform Admin** assigns a **Branch Owner** to that branch.
-- The **Branch Owner** configures the local team and assigns roles such as *pharmacist* or *inventory-operator*.
+- The **Branch Owner** configures the local team and assigns roles such as _pharmacist_ or _inventory-operator_.
 
 #### Roles
 
 | Role             | Description                                    |
-|------------------|------------------------------------------------|
-| `platform-admin` | Manages global franchise-level operations       |
-| `branch-owner`   | Manages branch-level team and role assignments  |
+| ---------------- | ---------------------------------------------- |
+| `platform-admin` | Manages global franchise-level operations      |
+| `branch-owner`   | Manages branch-level team and role assignments |
 
 #### Services & Zones
 
-| Zone                           | Service             | Purpose                                  |
-|--------------------------------|---------------------|------------------------------------------|
-| `platform-administration-zone` | `platform-service`  | Branch creation, user/role assignment    |
+| Zone                           | Service            | Purpose                               |
+| ------------------------------ | ------------------ | ------------------------------------- |
+| `platform-administration-zone` | `platform-service` | Branch creation, user/role assignment |
 
 ---
 
@@ -128,27 +128,27 @@ This use case covers the clinical workflow from prescription creation to medicat
 
 #### Description
 
-- A **Patient** submits a prescription request through the *Prescriptions Service*.
+- A **Patient** submits a prescription request through the _Prescriptions Service_.
 - A **Pharmacist** reviews and validates the prescription.
-- Once validated, the *Prescriptions Service* initiates a medication order by calling the *Orders Service*.
-- The *Orders Service* checks item availability by querying the *Inventory Service* and temporarily reserves (locks) the medication.
-- The **Inventory Operator**, via the *Inventory Service*, reviews stock levels and, if needed, creates a replenishment order.
+- Once validated, the _Prescriptions Service_ initiates a medication order by calling the _Orders Service_.
+- The _Orders Service_ checks item availability by querying the _Inventory Service_ and temporarily reserves (locks) the medication.
+- The **Inventory Operator**, via the _Inventory Service_, reviews stock levels and, if needed, creates a replenishment order.
 
 #### Roles
 
-| Role                 | Description                                      |
-|----------------------|--------------------------------------------------|
-| `patient`            | Requests prescriptions                            |
+| Role                 | Description                                          |
+| -------------------- | ---------------------------------------------------- |
+| `patient`            | Requests prescriptions                               |
 | `pharmacist`         | Validates prescriptions and places medication orders |
-| `inventory-operator` | Verifies stock and handles inventory ordering    |
+| `inventory-operator` | Verifies stock and handles inventory ordering        |
 
 #### Services & Zones
 
-| Zone                        | Service                | Purpose                                     |
-|-----------------------------|------------------------|---------------------------------------------|
-| `patient-services-zone`     | `prescriptions-service`| Handles prescription submissions             |
-| `operations-management-zone`| `orders-service`       | Orders medications from suppliers            |
-| `operations-management-zone`| `inventory-service`    | Checks and updates medication inventory      |
+| Zone                         | Service                 | Purpose                                 |
+| ---------------------------- | ----------------------- | --------------------------------------- |
+| `patient-services-zone`      | `prescriptions-service` | Handles prescription submissions        |
+| `operations-management-zone` | `orders-service`        | Orders medications from suppliers       |
+| `operations-management-zone` | `inventory-service`     | Checks and updates medication inventory |
 
 ## Workspace Setup & Policy apply for the Platform Administration Zone
 

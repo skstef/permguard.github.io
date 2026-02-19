@@ -24,7 +24,7 @@ type INavigation = INavLink[];
 export const NAVIGATION: INavigation = [
   {
     name: "Developers",
-    href: "/developers/developers",
+    href: "/developers/getting-started/developers-intro-to-permguard",
   },
   {
     name: "Command-Line",

@@ -1,9 +1,9 @@
 ---
-id: developers-run-server
-title: Run the Server
-sidebar_label: Run the Server
-sidebar_position: 10103
-description: This section provides instructions for running the Server.
+id: developers-run-authz-server
+title: Run the AuthZServer
+sidebar_label: Run the AuthZServer
+sidebar_position: 3
+description: This section provides instructions for running the AuthZServer.
 ---
 
 The **`Server`** can operate as both the `control-plane` and the `data-plane` for `Permguard`.
