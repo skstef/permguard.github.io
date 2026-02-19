@@ -28,6 +28,7 @@ The system is language-agnostic: policies and trust logic are not tied to any sp
 Its design is grounded in policies that are `Transferable and Verifiable`, `Versionable and Immutable`, and `Resilient to Disconnection`.
 
 This foundation enables secure, scalable, and resilient trust and authorization across distributed environments.
+:::
 
 <div style={{textAlign: "center"}}>
   <img alt="Permguard Policies" src="/images/diagrams/d21.webp" />
