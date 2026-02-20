@@ -94,31 +94,21 @@ const config: Config = {
       copyright: `Permguard® is a registered trademark.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.vsDark,
+      additionalLanguages: [
+        "powershell",
+        "bash",
+        "go",
+        "java",
+        "csharp",
+        "typescript",
+        "python",
+        "rust",
+        "markup",
+        // "json",
+      ],
     },
   } satisfies Preset.ThemeConfig,
-
-  scripts: [
-    // Custom JS
-    {
-      src: "/js/comparision-slider/slider.js",
-    },
-    {
-      src: "/js/highlightjs/highlight.min.js",
-    },
-    {
-      src: "/js/highlightjs/languages/python.min.js",
-    },
-    {
-      src: "/js/highlightjs/languages/go.min.js",
-    },
-    {
-      src: "/js/highlightjs/highlight-syntax.js",
-    },
-  ],
-
-  stylesheets: ["/css/highlightjs/devibeans.min.css"],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
