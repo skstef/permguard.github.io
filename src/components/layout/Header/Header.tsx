@@ -15,7 +15,7 @@ export const Header: React.FC<IHeaderProps> = ({ mobileSidebarToggle }) => {
   return (
     <header
       className={classNames(
-        "sticky w-full max-w-360 mx-auto top-0 z-50 flex flex-none flex-wrap items-center justify-between px-6 py-4 lg:py-3.75 transition sm:px-10 md:px-6 xl:px-17.5 shadow-none",
+        "sticky w-full max-w-360 mx-auto top-0 z-50 flex flex-none flex-wrap items-center justify-between px-6 py-4 min-[996px]:py-3.75 transition sm:px-10 md:px-6 xl:px-17.5 shadow-none",
       )}
     >
       <div
@@ -35,14 +35,14 @@ export const Header: React.FC<IHeaderProps> = ({ mobileSidebarToggle }) => {
 
       <Navigation />
 
-      <div className="flex lg:hidden gap-3 items-center">
+      <div className="flex min-[996px]:hidden gap-3 items-center">
         <div className="w-8 h-8 relative flex justify-center items-center">
           <SearchBar />
         </div>
         {mobileSidebarToggle ?? <MobileMenu />}
       </div>
 
-      <div className="relative [&>a]:text-white! [&>a]:hover:text-fuchsia-500! hidden basis-0 items-center justify-end gap-6 md:gap-5 lg:gap-4 xl:gap-6 lg:flex">
+      <div className="relative [&>a]:text-white! [&>a]:hover:text-fuchsia-500! hidden basis-0 items-center justify-end gap-6 md:gap-5 min-[996px]:gap-4 xl:gap-6 min-[996px]:flex">
         <NavbarSearch>
           <SearchBar />
         </NavbarSearch>
