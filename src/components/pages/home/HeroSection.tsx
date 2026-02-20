@@ -29,8 +29,8 @@ export const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link
-              href="/"
-              className="rounded-full bg-[#cc34df] text-white text-lg font-medium py-2.5 px-6 text-center hover:bg-[#9c28a7]"
+              href="/developers/getting-started/developers-intro-to-permguard"
+              className="rounded-full z-10 bg-[#cc34df] text-white text-lg font-medium py-2.5 px-6 text-center hover:bg-[#9c28a7]"
             >
               Get Started
             </Link>
@@ -52,7 +52,7 @@ export const HeroSection = () => {
           />
           <img
             src="/images/home/hero_mobile.svg"
-            className="block lg:hidden max-w-[500px] w-full mt-[58px] scale-[1.8] mx-auto"
+            className="block z-0! lg:hidden max-w-[500px] w-full mt-[58px] scale-[1.8] mx-auto"
             alt="Permguard Docs"
           />
         </div>

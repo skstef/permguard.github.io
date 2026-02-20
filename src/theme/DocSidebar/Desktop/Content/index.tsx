@@ -38,8 +38,6 @@ export default function DocSidebarDesktopContent({
     return sidebar[0].items;
   }, [sidebar]);
 
-  console.log({ customSidebar });
-
   return (
     <nav
       aria-label={translate({
