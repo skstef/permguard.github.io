@@ -2,6 +2,7 @@
   "label": "Permissions",
   "position": 10220,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/developers/concepts/permissions"
   }
 }
