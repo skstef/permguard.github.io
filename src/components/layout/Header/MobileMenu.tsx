@@ -26,7 +26,7 @@ export const MobileMenu = () => {
       <button
         onClick={toggleMenu}
         aria-label="Menu"
-        className="flex min-[980px]:hidden flex-col gap-1 z-[500] cursor-pointer"
+        className="flex flex-col gap-1 z-[500] cursor-pointer"
       >
         <div className={"w-5 h-0.5 bg-white transition"} />
         <div className={"w-5 h-0.5 bg-white transition"} />
@@ -38,7 +38,7 @@ export const MobileMenu = () => {
         <div
           onClick={toggleMenu}
           className={classNames(
-            "flex min-[980px]:hidden fixed left-0 right-0 top-0 bottom-0 overflow-hidden bg-[rgba(23,24,28,0.5)] backdrop-blur-sm z-[1000]",
+            "flex lg:hidden fixed left-0 right-0 top-0 bottom-0 overflow-hidden bg-[rgba(23,24,28,0.5)] backdrop-blur-sm z-[1000]",
             isMenuOpened ? "opacity-100 visible" : "opacity-0 invisible",
           )}
         >
